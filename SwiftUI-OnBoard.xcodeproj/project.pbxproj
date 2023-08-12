@@ -14,6 +14,7 @@
 		07632A9E2A87B341004526F7 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A9D2A87B341004526F7 /* Wave.swift */; };
 		07632AA02A87B458004526F7 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A9F2A87B458004526F7 /* Extentions.swift */; };
 		07632AA32A87B5BE004526F7 /* Wave1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632AA22A87B5BE004526F7 /* Wave1.swift */; };
+		07632AA62A87C2F6004526F7 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 07632AA52A87C2F6004526F7 /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07632AA62A87C2F6004526F7 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-OnBoard";
+			packageProductDependencies = (
+				07632AA52A87C2F6004526F7 /* SwiftUIX */,
+			);
 			productName = "SwiftUI-OnBoard";
 			productReference = 07632A8C2A87A476004526F7 /* SwiftUI-OnBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 07632A832A87A475004526F7;
+			packageReferences = (
+				07632AA42A87C2F6004526F7 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 07632A8D2A87A476004526F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,6 +303,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +333,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07632AA42A87C2F6004526F7 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07632AA52A87C2F6004526F7 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07632AA42A87C2F6004526F7 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07632A842A87A475004526F7 /* Project object */;
 }
